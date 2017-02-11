@@ -4,7 +4,7 @@
   width: 275px;    
   margin: 25px;    
   min-height:250px;
-  max-height:250px;
+  /*min-height:250px;*/
   padding-top:35px;
   position:relative;   
   border:1px solid #E8E8E8;  
