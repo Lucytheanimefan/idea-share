@@ -1,6 +1,7 @@
 import server
 import datetime
 import pymongo
+from JSONEncoder import JSONEncoder
 
 db = server.get_db()
 
@@ -86,6 +87,7 @@ def return_posts(start, end, doc):
     for p in range(start, end):
         post = {"title": doc[p]["title"], "content": doc[p]["content"], "category": doc[p]["category"]}
         posts.append(post)
+    posts = [JSONEncoder().encode(post) for post in posts]
     return posts
 
 
