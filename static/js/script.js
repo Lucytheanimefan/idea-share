@@ -2,7 +2,8 @@ generateNotes(5);
 
 getNotes({"category":"art", "num_posts":20}, function(d){
 	console.log("populate notes");
-	console.log(d);
+	data = d["result"];
+
 });
 
 function generateNotes(numNotes){
@@ -13,8 +14,10 @@ function generateNotes(numNotes){
 
 }
 
-function createPostIt(){
-	$("#main").append("<div class='postit'></div>")
+function createPostIt(title, content){
+	$("#main").append("<div class='postit'>"+"<h1>"+title+"</h1>"+
+		"div class='content'>"+content + "</div>"+
+		"</div>")
 }
 
 
