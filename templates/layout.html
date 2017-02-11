@@ -48,6 +48,16 @@
     <div class="container-fluid">
         {% block body %}{% endblock %}
     </div>
+    <footer>
+        <div class="footer navbar-fixed-bottom">
+            <button class="accordion">Add Note</button>
+            <div class="panel">
+               <textarea name="message" placeholder="Note"></textarea>
+            </div>
+            
+        </div>
+        </section>
+        </div>
     </footer>
     <script type="text/javascript" src="{{ url_for('static', filename='plugins/jquery.min.js') }}"></script>
     <script type="text/javascript" src="{{ url_for('static', filename='plugins/jquery.scrolly.min.js') }}"></script>
@@ -57,5 +67,4 @@
     <script type="text/javascript" src="{{ url_for('static', filename='plugins/main.js') }}"></script>
     <script type="text/javascript" src="{{ url_for('static', filename='plugins/bootstrap.min.js') }}"></script>
     <script type="text/javascript" src="{{ url_for('static', filename='js/script.js') }}"></script>
-
 </body>

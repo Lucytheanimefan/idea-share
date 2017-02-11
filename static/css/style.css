@@ -1,40 +1,190 @@
 .postit {
-  line-height: 1;
-  text-align:center;     
-  width: 275px;    
-  margin: 25px;    
-  min-height:250px;
-  /*min-height:250px;*/
-  padding-top:35px;
-  position:relative;   
-  border:1px solid #E8E8E8;  
-  border-top:60px solid #fdfd86;
-  font-family:'Reenie Beanie';    
-  font-size:22px;      
-  border-bottom-right-radius: 60px 5px;
-  display:inline-block;    
-   background: #ffff88; /* Old browsers */
-background: -moz-linear-gradient(-45deg, #ffff88 81%, #ffff88 82%, #ffff88 82%, #ffffc6 100%); /* FF3.6+ */
-background: -webkit-gradient(linear, left top, right bottom, color-stop(81%,#ffff88), color-stop(82%,#ffff88), color-stop(82%,#ffff88), color-stop(100%,#ffffc6)); /* Chrome,Safari4+ */
-background: -webkit-linear-gradient(-45deg, #ffff88 81%,#ffff88 82%,#ffff88 82%,#ffffc6 100%); /* Chrome10+,Safari5.1+ */
-background: -o-linear-gradient(-45deg, #ffff88 81%,#ffff88 82%,#ffff88 82%,#ffffc6 100%); /* Opera 11.10+ */
-background: -ms-linear-gradient(-45deg, #ffff88 81%,#ffff88 82%,#ffff88 82%,#ffffc6 100%); /* IE10+ */
-background: linear-gradient(135deg, #ffff88 81%,#ffff88 82%,#ffff88 82%,#ffffc6 100%); /* W3C */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffff88', endColorstr='#ffffc6',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+    line-height: 1;
+    text-align: center;
+    width: 275px;
+    margin: 25px;
+    min-height: 250px;
+    /*min-height:250px;*/
+    padding-top: 35px;
+    position: relative;
+    border: 1px solid #E8E8E8;
+    border-top: 60px solid #fdfd86;
+    font-family: 'Reenie Beanie';
+    font-size: 22px;
+    border-bottom-right-radius: 60px 5px;
+    display: inline-block;
+    background: #ffff88;
+    /* Old browsers */
+    background: -moz-linear-gradient(-45deg, #ffff88 81%, #ffff88 82%, #ffff88 82%, #ffffc6 100%);
+    /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, right bottom, color-stop(81%, #ffff88), color-stop(82%, #ffff88), color-stop(82%, #ffff88), color-stop(100%, #ffffc6));
+    /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(-45deg, #ffff88 81%, #ffff88 82%, #ffff88 82%, #ffffc6 100%);
+    /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(-45deg, #ffff88 81%, #ffff88 82%, #ffff88 82%, #ffffc6 100%);
+    /* Opera 11.10+ */
+    background: -ms-linear-gradient(-45deg, #ffff88 81%, #ffff88 82%, #ffff88 82%, #ffffc6 100%);
+    /* IE10+ */
+    background: linear-gradient(135deg, #ffff88 81%, #ffff88 82%, #ffff88 82%, #ffffc6 100%);
+    /* W3C */
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr='#ffff88', endColorstr='#ffffc6', GradientType=1);
+    /* IE6-9 fallback on horizontal gradient */
 }
- 
-.postit:after {     
-   content: "";
-  position:absolute;
-  z-index:-1;
-  right:-0px; bottom:20px;
-  width:200px;
-  height: 25px;
-  background: rgba(0, 0, 0, 0.2);
-  box-shadow:2px 15px 5px rgba(0, 0, 0, 0.40);
--moz-transform: matrix(-1, -0.1, 0, 1, 0, 0);
- -webkit-transform: matrix(-1, -0.1, 0, 1, 0, 0);
-      -o-transform: matrix(-1, -0.1, 0, 1, 0, 0);
-     -ms-transform: matrix(-1, -0.1, 0, 1, 0, 0);
-         transform: matrix(-1, -0.1, 0, 1, 0, 0);
+
+.postit:after {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    right: -0px;
+    bottom: 20px;
+    width: 200px;
+    height: 25px;
+    background: rgba(0, 0, 0, 0.2);
+    box-shadow: 2px 15px 5px rgba(0, 0, 0, 0.40);
+    -moz-transform: matrix(-1, -0.1, 0, 1, 0, 0);
+    -webkit-transform: matrix(-1, -0.1, 0, 1, 0, 0);
+    -o-transform: matrix(-1, -0.1, 0, 1, 0, 0);
+    -ms-transform: matrix(-1, -0.1, 0, 1, 0, 0);
+    transform: matrix(-1, -0.1, 0, 1, 0, 0);
+}
+
+.category {
+    position: absolute;
+    bottom: 5%;
+}
+
+.title {
+    color: #111;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 30px;
+    font-weight: 300;
+    line-height: 32px;
+    margin: 0 0 72px;
+    text-align: center;
+}
+
+.title0 {
+    color: #111;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 30px;
+    font-weight: 300;
+    line-height: 32px;
+    margin: 0 0 72px;
+    text-align: center;
+}
+
+.title1 {
+    color: black;
+    -webkit-text-fill-color: transparent;
+    /* Will override color (regardless of order) */
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+}
+
+.title2 {
+    display: inline;
+    position: relative;
+    font: 30px Helvetica, Sans-Serif;
+    letter-spacing: -1px;
+    color: rgba(0, 0, 255, 0.5);
+}
+
+.title2:after {
+    content: " ";
+    position: absolute;
+    left: 5px;
+    top: 1px;
+    color: rgba(255, 0, 0, 0.5);
+}
+
+.title3 {
+    display: inline;
+    position: relative;
+    font: 30px Helvetica, Sans-Serif;
+    letter-spacing: -1px;
+    color: rgba(0, 20, 255, 0.5);
+}
+
+.title3:after {
+    content: " ";
+    position: absolute;
+    left: 5px;
+    top: 1px;
+    color: rgba(255, 0, 0, 0.5);
+}
+
+textarea {
+    margin-top: 10px;
+    width: 100% !important;
+    height: 100px;
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0.07);
+    border-color: -moz-use-text-color #FFFFFF #FFFFFF -moz-use-text-color;
+    border-image: none;
+    border-radius: 6px 6px 6px 6px;
+    border-style: none solid solid none;
+    border-width: medium 1px 1px medium;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.12) inset;
+    color: #555555;
+    font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 1em;
+    line-height: 1.4em;
+    padding: 5px 8px;
+    transition: background-color 0.2s ease 0s;
+}
+
+textarea:focus {
+    background: none repeat scroll 0 0 #FFFFFF;
+    outline-width: 0;
+}
+
+button.accordion {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    margin-left: 50%;
+    width: 50%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    font-weight: bold;
+    transition: 0.4s;
+}
+
+button.accordion.active,
+button.accordion:hover {
+    background-color: rgba(238, 238, 238, 0.4);
+    color: #444;
+}
+
+button.accordion:after {
+    content: '\02795';
+    font-size: 13px;
+    color: #777;
+    float: right;
+    margin-left: 5px;
+}
+
+button.accordion.active:after {
+    content: "\2796";
+}
+
+div.panel {
+    margin-left: 50%;
+    padding: 0 18px;
+    background-color: rgba(255, 255, 255, 0.4);
+    max-height: 0;
+    overflow-y: hidden;
+    transition: 0.6s ease-in-out;
+    opacity: 0;
+}
+
+div.panel.show {
+    opacity: 1;
+    max-height: 500px;
 }

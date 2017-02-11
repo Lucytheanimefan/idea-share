@@ -8,7 +8,7 @@ getNotes({"category":"category", "num_posts":20}, function(d){
 	for (var i = 0; i<len; i++){
 		var postit = JSON.parse(data[i]);
 		console.log(postit);
-		createPostIt(postit["title"],postit["content"]);
+		createPostIt(postit["title"],postit["content"], postit["category"]);
 	}
 
 });
@@ -21,12 +21,34 @@ function generateNotes(numNotes){
 
 }
 
-function createPostIt(title, content){
-	$("#main").append("<div class='postit'>"+"<h2 class='title'>"+title+"</h2>"+
+function createPostIt(title, content,category){
+	$("#main").append("<div class='postit'>"+"<h2 class='title"+getRandomArbitrary(0,4)+"'>"+title+"</h2>"+
 		"<div class='content'>"+ content + "</div>"+
+		"<div class='category'>"+category+"</div>"+
 		"</div>")
 }
 
+/**
+ * Returns a random number between min (inclusive) and max (exclusive)
+ */
+function getRandomArbitrary(min, max) {
+    return parseInt(Math.random() * (max - min) + min);
+}
+
+function dropDownInteractivity() {
+
+    var acc = document.getElementsByClassName("accordion");
+    var i;
+
+    for (i = 0; i < acc.length; i++) {
+        acc[i].onclick = function() {
+            this.classList.toggle("active");
+            this.nextElementSibling.classList.toggle("show");
+        }
+    }
+}
+
+dropDownInteractivity();
 
 
 /*---------------------ajax calls-------------------*/
