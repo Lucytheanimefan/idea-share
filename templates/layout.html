@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Idea Share</title>
+    <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans|Quicksand|Raleway|Ranga" rel="stylesheet">
+    <!--<link rel=stylesheet type=text/css href="{{ url_for('static', filename='plugins/bootstrap.min.css') }}">-->
+    <link rel=stylesheet type=text/css href="{{ url_for('static', filename='css/style.css') }}">
+    <link rel=stylesheet type=text/css href="{{ url_for('static', filename='plugins/font-awesome.min.css') }}">
+    <link rel=stylesheet type=text/css href="{{ url_for('static', filename='css/prologue.css') }}">
+    <link rel=stylesheet type=text/css href="{{ url_for('static', filename='plugins/bootstrap.min.css') }}">
+</head>
+
+<body>
+    <!-- Header start-->
+    <div id="header">
+        <div class="top">
+            <!-- Logo -->
+            <div id="logo">
+                <span class="image avatar48"><img src="images/avatar.jpg" alt="" /></span>
+                <h1 id="title">Jane Doe</h1>
+                <p>Hyperspace Engineer</p>
+            </div>
+            <!-- Nav -->
+            <nav id="nav">
+                <ul>
+                    <li><a href="#top" id="top-link" class="skel-layers-ignoreHref"><span class="icon fa-home">Intro</span></a></li>
+                    <li><a href="#portfolio" id="portfolio-link" class="skel-layers-ignoreHref"><span class="icon fa-th">Portfolio</span></a></li>
+                    <li><a href="#about" id="about-link" class="skel-layers-ignoreHref"><span class="icon fa-user">About Me</span></a></li>
+                    <li><a href="#contact" id="contact-link" class="skel-layers-ignoreHref"><span class="icon fa-envelope">Contact</span></a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="bottom">
+            <!-- Social Icons -->
+            <ul class="icons">
+                <li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+                <li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+                <li><a href="#" class="icon fa-github"><span class="label">Github</span></a></li>
+                <li><a href="#" class="icon fa-dribbble"><span class="label">Dribbble</span></a></li>
+                <li><a href="#" class="icon fa-envelope"><span class="label">Email</span></a></li>
+            </ul>
+        </div>
+    </div>
+    <div class="container-fluid">
+        {% block body %}{% endblock %}
+    </div>
+    </footer>
+    <script type="text/javascript" src="{{ url_for('static', filename='plugins/jquery.min.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='plugins/jquery.scrolly.min.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='plugins/jquery.scrollzer.min.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='plugins/skel.min.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='plugins/util.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='plugins/main.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='plugins/bootstrap.min.js') }}"></script>
+    <script type="text/javascript" src="{{ url_for('static', filename='js/script.js') }}"></script>
+
+</body>
