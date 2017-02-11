@@ -2,10 +2,12 @@
 
 getNotes({"category":"category", "num_posts":20}, function(d){
 	console.log("populate notes");
+	console.log(d);
 	data = d["result"];
 	len = data.length;
 	for (var i = 0; i<len; i++){
-		var postit = data[i]
+		var postit = JSON.parse(data[i]);
+		console.log(postit);
 		createPostIt(postit["title"],postit["content"]);
 	}
 
@@ -20,8 +22,8 @@ function generateNotes(numNotes){
 }
 
 function createPostIt(title, content){
-	$("#main").append("<div class='postit'>"+"<h1>"+title+"</h1>"+
-		"div class='content'>"+content + "</div>"+
+	$("#main").append("<div class='postit'>"+"<h2 class='title'>"+title+"</h2>"+
+		"<div class='content'>"+ content + "</div>"+
 		"</div>")
 }
 

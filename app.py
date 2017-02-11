@@ -25,9 +25,6 @@ def add_note():
 @app.route("/getNotes", methods = ["GET"])
 def get_note():
 	print "getting note"
-	print int(request.args.get("num_posts"))
-	print request.args.get("category")
-	print "done printing requests params"
 	data = post.get_all()
 	print data
 	return jsonify(result=data)
