@@ -55,6 +55,11 @@ dropDownInteractivity();
 
 var urlBase = window.location.hostname
 
+$("#createNote").click(function(){
+	data = {"title": "blahblah", "content":$("#createNote").val(), "category":"haha"}
+	createNote(data);
+})
+
 function createNote(data) {
     $.ajax({
         type: 'POST',

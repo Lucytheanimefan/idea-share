@@ -16,7 +16,9 @@ def main():
 
 @app.route("/addNote", methods = ["POST"])
 def add_note():
+	print "Adding note"
 	data = request.get_json()
+	print data
 	to_ret = post.add(data['title'], data['content'], data['category'])
 	return to_ret
 
