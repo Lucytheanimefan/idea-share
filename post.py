@@ -12,6 +12,7 @@ def add(title, content, category):
     else:
         date = get_date(datetime.datetime.now())
         db.ideas.insert({"title": title, "content": content, "category": category, "date": date})
+        add(category)
         return "Success!"
 
 

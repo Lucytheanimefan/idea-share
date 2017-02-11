@@ -6,7 +6,7 @@ categories = []
 
 def init():
     if (db.ideas.find({"_id": 0}).count() == 0):
-        db.ideas.insert({"_id": 0, "categories": []})
+        db.ideas.insert({"_id": 0, "title": "", "content": "", "category": "", "categories": []})
     categories = db.ideas.find({"_id": 0})[0]
 
 def add(category):
@@ -32,3 +32,5 @@ def get_all():
         return "None"
     else:
         return db.ideas.find({"_id": 0})[0]["categories"]
+
+add("music")
