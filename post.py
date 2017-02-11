@@ -94,7 +94,9 @@ def return_posts(start, end, doc):
 def get_date(entry):
     return entry.strftime("%c")
 
-add("new post1", "content", "category")
-array = get_all()
-for i in range(len(array)):
-    print(array[i])
+
+if __name__ == '__main__':
+    add("new post1", "content", "category")
+    array = get_all()
+    for i in range(len(array)):
+        print(array[i])

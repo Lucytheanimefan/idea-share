@@ -28,7 +28,7 @@ def get_note():
 	print int(request.args.get("num_posts"))
 	print request.args.get("category")
 	print "done printing requests params"
-	data = post.get(int(request.args.get("num_posts")), request.args.get("category"))
+	data = post.get_all()
 	print data
 	return jsonify(result=data)
 	

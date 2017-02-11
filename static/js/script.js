@@ -1,8 +1,13 @@
-generateNotes(5);
+//generateNotes(5);
 
-getNotes({"category":"art", "num_posts":20}, function(d){
+getNotes({"category":"category", "num_posts":20}, function(d){
 	console.log("populate notes");
 	data = d["result"];
+	len = data.length;
+	for (var i = 0; i<len; i++){
+		var postit = data[i]
+		createPostIt(postit["title"],postit["content"]);
+	}
 
 });
 
