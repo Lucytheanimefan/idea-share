@@ -18,4 +18,3 @@ def main_emotion(emotions):
             color = colors[emotion]
     return color
 
-main_emotion(get_emotions("I like pie a lot"))

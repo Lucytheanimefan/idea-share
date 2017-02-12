@@ -6,14 +6,17 @@ categories = []
 
 
 def init():
+    global categories
     if (db.ideas.find({"_id": 0}).count() == 0):
         db.ideas.insert({"_id": 0, "title": "", "content": "", "category": "", "categories": []})
-    categories = db.ideas.find({"_id": 0})[0]
+    categories = db.ideas.find({"_id": 0})[0]["categories"]
 
 
 def add(category):
+    global categories
     init()
     if category not in categories:
+        print("hi")
         categories.append(category)
         db.ideas.update(
             {"_id": 0},
@@ -22,6 +25,7 @@ def add(category):
 
 
 def remove(category):
+    global categories
     init()
     if category in categories:
         categories.remove(category)

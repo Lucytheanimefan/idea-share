@@ -8,6 +8,10 @@
     color: black;
 }
 
+.input-group-btn {
+    color: black;
+}
+
 .postit {
     line-height: 1;
     text-align: center;
@@ -142,7 +146,7 @@ textarea {
     font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 1em;
     line-height: 1.4em;
-    padding: 5px 8px;
+    /*padding: 5px 8px;*/
     transition: background-color 0.2s ease 0s;
 }
 
@@ -152,7 +156,7 @@ textarea:focus {
 }
 
 button.accordion {
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgba(0, 0, 0, 0.75);
     color: white;
     cursor: pointer;
     padding: 18px;
@@ -168,7 +172,7 @@ button.accordion {
 
 button.accordion.active,
 button.accordion:hover {
-    background-color: rgba(238, 238, 238, 0.4);
+    background-color: rgba(100, 100, 100, 0.75);
     color: #444;
 }
 

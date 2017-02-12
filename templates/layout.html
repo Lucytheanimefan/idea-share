@@ -22,17 +22,6 @@
             <div id="logo">
                 <h1 id="title">Categories</h1>
                 <div class="input-group">
-                    <div class="input-group-btn">
-                        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
-                            <span id="search_concept" class="filter">Filter by Category</span> <span class="caret"></span>
-                        </button>
-                        <ul class="dropdown-menu" role="menu">
-                          <li><a href="#">Category 1</a></li>
-                          <li><a href="#">Category 2</a></li>
-                          <li class="divider"></li>
-                          <li><a href="#all">Anything</a></li>
-                        </ul>
-                    </div>
                     <input type="hidden" name="search_param" value="all" id="search_param">
                     <input type="text" class="form-control" name="x" placeholder="Search term...">
                     <span class="input-group-btn">
@@ -43,10 +32,7 @@
             <!-- Nav -->
             <nav id="nav">
                 <ul>
-                    <li><a href="#top" id="top-link" class="skel-layers-ignoreHref"><span class="icon fa-home">Intro</span></a></li>
-                    <li><a href="#portfolio" id="portfolio-link" class="skel-layers-ignoreHref"><span class="icon fa-th">Portfolio</span></a></li>
-                    <li><a href="#about" id="about-link" class="skel-layers-ignoreHref"><span class="icon fa-user">About Me</span></a></li>
-                    <li><a href="#contact" id="contact-link" class="skel-layers-ignoreHref"><span class="icon fa-envelope">Contact</span></a></li>
+                    <div id = "category"></div>
                 </ul>
             </nav>
         </div>
@@ -68,8 +54,14 @@
         <div class="footer navbar-fixed-bottom">
             <button class="accordion">Add Note</button>
             <div class="panel">
-               <textarea name="message" id="noteContent" placeholder="Note"></textarea>
-               <button type="button" class="btn" id="createNote">Submit</button>
+                <form class = "form-horizontal">
+                    <div class = "form-group">
+                        <input class="form-control" id="title-form" type="text" placeholder="Title">
+                        <input class="form-control" id="category-form" type="text" placeholder="Category">
+                        <textarea name="message" id="noteContent" placeholder="Note"></textarea>
+                        <button type="button" class="btn" id="createNote">Submit</button>
+                    </div>
+                </form>
             </div>
             
         </div>

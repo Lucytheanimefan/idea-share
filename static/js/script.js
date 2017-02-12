@@ -1,5 +1,13 @@
 //generateNotes(5);
 
+getCategories({}, function(d) {
+    data = d["result"];
+    for (var i = 0; i < data.length; i++) {
+        var newCategory = "<li><a href='#" + data[i] + "' class='skel-layers-ignoreHref'>" + data[i] + "</a></li>";
+        document.getElementById("category").innerHTML += newCategory;
+    }
+});
+
 getNotes({"category":"category", "num_posts":20}, function(d){
 	console.log("populate notes");
 	console.log(d);
@@ -50,7 +58,6 @@ function dropDownInteractivity() {
 
 dropDownInteractivity();
 
-
 /*---------------------ajax calls-------------------*/
 
 var urlBase = window.location.hostname
@@ -78,9 +85,12 @@ function createNote(data) {
     });
 }
 
-
 function getNotes(params, callback) {
     getData("/getNotes", params, callback);
+}
+
+function getCategories(params, callback) {
+    getData("/getCategories", params, callback);
 }
 
 function getData(urlBase=urlBase, params, callback) {

@@ -1,4 +1,5 @@
 from flask import Flask, render_template, request, jsonify
+import category
 import os
 import post
 from JSONEncoder import JSONEncoder
@@ -32,6 +33,10 @@ def get_note():
 	return jsonify(result=data)
 	
 
+@app.route("/getCategories", methods = ["GET"])
+def get_categories():
+	data = category.get_all()
+	return jsonify(result=data)
 
 if __name__ == "__main__":
 	port = int(os.environ.get("PORT", 5000))
