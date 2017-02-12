@@ -1,3 +1,4 @@
+import category
 import server
 import datetime
 import pymongo
@@ -12,7 +13,7 @@ def add(title, content, category):
     else:
         date = get_date(datetime.datetime.now())
         db.ideas.insert({"title": title, "content": content, "category": category, "date": date})
-        add(category)
+        category.add(category)
         return "Success!"
 
 
@@ -96,8 +97,4 @@ def get_date(entry):
     return entry.strftime("%c")
 
 
-if __name__ == '__main__':
-    add("new post1", "content", "category")
-    array = get_all()
-    for i in range(len(array)):
-        print(array[i])
+#if __name__ == '__main__':

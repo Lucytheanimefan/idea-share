@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Idea Share</title>
-    <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans|Quicksand|Raleway|Ranga" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans|Quicksand:500,700|Raleway|Ranga" rel="stylesheet">
     <!--<link rel=stylesheet type=text/css href="{{ url_for('static', filename='plugins/bootstrap.min.css') }}">-->
     <link rel=stylesheet type=text/css href="{{ url_for('static', filename='css/style.css') }}">
     <link rel=stylesheet type=text/css href="{{ url_for('static', filename='plugins/font-awesome.min.css') }}">
@@ -20,9 +20,25 @@
         <div class="top">
             <!-- Logo -->
             <div id="logo">
-                <span class="image avatar48"><img src="images/avatar.jpg" alt="" /></span>
-                <h1 id="title">Jane Doe</h1>
-                <p>Hyperspace Engineer</p>
+                <h1 id="title">Categories</h1>
+                <div class="input-group">
+                    <div class="input-group-btn">
+                        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                            <span id="search_concept" class="filter">Filter by Category</span> <span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu" role="menu">
+                          <li><a href="#">Category 1</a></li>
+                          <li><a href="#">Category 2</a></li>
+                          <li class="divider"></li>
+                          <li><a href="#all">Anything</a></li>
+                        </ul>
+                    </div>
+                    <input type="hidden" name="search_param" value="all" id="search_param">
+                    <input type="text" class="form-control" name="x" placeholder="Search term...">
+                    <span class="input-group-btn">
+                        <button class="btn btn-default" type="button"><span class="glyphicon glyphicon-search"></span></button>
+                    </span>
+                </div>
             </div>
             <!-- Nav -->
             <nav id="nav">

@@ -1,8 +1,18 @@
+.filter {
+    font-family: 'Quicksand';
+    color: black;
+}
+
+.btn.btn-default.dropdown-toggle {
+    font-family: 'Quicksand';
+    color: black;
+}
+
 .postit {
     line-height: 1;
     text-align: center;
     width: 275px;
-    margin: 25px;
+    margin: 20px;
     min-height: 250px;
     /*min-height:250px;*/
     padding-top: 35px;
