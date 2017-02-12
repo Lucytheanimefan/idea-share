@@ -30,7 +30,7 @@ function generateNotes(numNotes){
 }
 
 function createPostIt(title, content,category){
-	$("#main").append("<div class='postit'>"+"<h2 class='title"+getRandomArbitrary(0,4)+"'>"+title+"</h2>"+
+	$("#main").append("<div class='postit'>"+"<h2 class='title title"+getRandomArbitrary(0,4)+"'>"+title+"</h2>"+
 		"<div class='content'>"+ content + "</div>"+
 		"<div class='category'>"+category+"</div>"+
 		"</div>")

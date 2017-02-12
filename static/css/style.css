@@ -67,23 +67,29 @@
     bottom: 5%;
 }
 
+.content{
+  margin-bottom: 1% !important;
+}
+.postit *{
+  margin-top: -8px;
+}
+
 .title {
     color: #111;
     font-family: 'Open Sans', sans-serif;
-    font-size: 30px;
+    font-size: 20px;
     font-weight: 300;
-    line-height: 32px;
-    margin: 0 0 72px;
+    line-height: 20px;
     text-align: center;
+    margin-top: -50px !important;
 }
 
 .title0 {
     color: #111;
     font-family: 'Open Sans', sans-serif;
-    font-size: 30px;
+    font-size: 20px;
     font-weight: 300;
-    line-height: 32px;
-    margin: 0 0 72px;
+    line-height: 20px;
     text-align: center;
 }
 
@@ -112,9 +118,8 @@
 }
 
 .title3 {
-    display: inline;
-    position: relative;
-    font: 30px Helvetica, Sans-Serif;
+    line-height: 20px;
+    font: 20px Helvetica, Sans-Serif;
     letter-spacing: -1px;
     color: rgba(0, 20, 255, 0.5);
 }
