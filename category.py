@@ -12,7 +12,7 @@ def init():
     categories = db.ideas.find({"_id": 0})[0]["categories"]
 
 
-def add(category):
+def add_category(category):
     global categories
     init()
     if category not in categories:

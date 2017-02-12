@@ -1,3 +1,4 @@
+from category import *
 import category
 import server
 import datetime
@@ -13,7 +14,7 @@ def add(title, content, category):
     else:
         date = get_date(datetime.datetime.now())
         db.ideas.insert({"title": title, "content": content, "category": category, "date": date})
-        category.add(category)
+        add_category(category)
         return "Success!"
 
 
