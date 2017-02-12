@@ -56,7 +56,8 @@ dropDownInteractivity();
 var urlBase = window.location.hostname
 
 $("#createNote").click(function(){
-	data = {"title": "blahblah", "content":$("#createNote").val(), "category":"haha"}
+	data = {"title": "blahblah", "content":$("#noteContent").val(), "category":"haha"}
+	console.log(data);
 	createNote(data);
 })
 
